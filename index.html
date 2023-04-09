@@ -1,0 +1,76 @@
+<!--change the font family -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>homi bhabaha</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+
+            <div class="box">
+                <div class="name">
+                    <h1>Homi J Bhabha</h1>
+                    <h3>1909-1966</h3>
+                    <img id="change" class="play-btn"  src="play2.png"  alt="">
+                </div>
+
+            </div>
+            
+            <div class="image-box">
+                <img src="3.jpg" id="image" alt="">
+
+            </div>
+
+
+            <div class="biography">
+                <p>Homi Jehangir Bhabha, FRS (30 October 1909 – 24 January 1966) was an Indian nuclear physicist, founding director, and professor of physics at the Tata Institute of Fundamental Research (TIFR). Colloquially known as "Father of Indian
+                    nuclear programme", Bhabha was also the founding director of the Atomic Energy Establishment, Trombay (AEET) which is now named the Bhabha Atomic Research Centre in his honour. TIFR and AEET were the cornerstone of the Indian development
+                    of nuclear weapons which Bhabha also supervised as director
+                </p>
+
+               
+
+                <p>
+                    Well I able to know about homi bhabha through the seris name <strong>ROCKET BOYS  </strong>After that he will become an big inspiration of my life
+                </p>
+            </div>
+
+            <hr>
+
+        </div>
+    </main>
+
+    <script type="text/javascript">
+        var btn = document.getElementById('change');
+        let image = document.getElementById('image');
+        var btn = document.getElementById("change");
+        let images = ['1.jpg', '2.jpg', '4.jpg']
+
+        btn.addEventListener('click', function() {
+            setInterval(function() {
+                let randon = Math.floor(Math.random() * 3);
+                image.src = images[randon];
+            }, 3000)
+        })
+
+
+        /*let images = ['1.jpg', 'exp.png', 'eg.jpg']
+        setInterval(function() {
+                let randon = Math.floor(Math.random() * 3);
+                image.src = images[randon];
+            }, 2000) */
+    </script>
+</body>
+
+
+
+</html>3
